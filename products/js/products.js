@@ -164,7 +164,7 @@ for(i = 0; i < addButtons.length; i++) {
             cartTotal.innerText = "$" + cart.cartTotal;
         }
 
-        if(cart.numberOfItems() == 0) {
+        if(cart.numberOfItems() === 0) {
             hideCart();
         }
         //unique value array to show bottle sselected
@@ -223,7 +223,9 @@ for(i = 0; i < deleteButtons.length; i++) {
             cartTotal.innerText = "$" + cart.cartTotal;
         }
 
-        if(cart.numberOfItems() == 0) {
+        if(cart.numberOfItems() === 0) {
+            cartList.innerText = 0;
+            cartTotal.innerText = "$" + 0;
             hideCart();
         }
 
